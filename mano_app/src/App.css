@@ -1,0 +1,23 @@
+body{
+  background-color: bisque;
+  margin: auto;
+}
+#text{
+  margin-left: 30px;
+  border: solid black 3px;
+}
+
+#button1{
+  width: 10em;
+  height: 10%;
+  margin-left: 20px;
+  border: solid black 3px;
+}
+
+#button1:hover{
+  background-color: aquamarine;
+}
+
+li{
+  font-size: larger;
+}
