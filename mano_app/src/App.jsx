@@ -8,11 +8,11 @@ function App() {
   return (
     <>
     {error ? <div>
-      klaida {error}
+      ⛔ Klaida {error}
     </div>: null}
 
-    <h1>To do list</h1>
-    <input type="text" name="" id="text" placeholder='Task' 
+    <h1 id='title'>TO DO LIST 😎</h1>
+    <input type="text" name="" id="text" placeholder='Please Enter a Task' 
     onChange={(e) => {
       setTask(e.target.value);
       }}
@@ -22,17 +22,17 @@ function App() {
       setError(null)
 
       if (task.trim().length == 0) {
-        setError("tuscias");
+        setError("Negali Buti Tuscias");
         return;
       }
-      if (task.trim().length > 5) {
-        setError('daug')
+      if (task.trim().length > 20) {
+        setError('Maziau nei 20')
         return;
       }
       setTasks(() => [...tasks, task]);
       setTask("");
       }}
-      id='button1'>submit</button>
+      id='button1'><i>Submit</i></button>
     <ul>
       {tasks.map((task) => (
         <li>{task}</li>

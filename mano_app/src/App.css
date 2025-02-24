@@ -1,6 +1,8 @@
 body{
   background-color: bisque;
   margin: auto;
+  text-align: center;
+  margin-top: 20pc;
 }
 #text{
   margin-left: 30px;
@@ -12,6 +14,7 @@ body{
   height: 10%;
   margin-left: 20px;
   border: solid black 3px;
+  font-family: Georgia, serif;
 }
 
 #button1:hover{
@@ -20,4 +23,11 @@ body{
 
 li{
   font-size: larger;
+}
+
+#title{
+  font-family: 'Courier New', monospace;
+}
+::placeholder{
+  font-family: Garamond, serif;
 }
